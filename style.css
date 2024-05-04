@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202528;
+}
+
+section {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1){
+    color:#fff;
+}
+
+section:nth-child(2){
+    color:#202528;
+    background: #fff;
+}
+
+section:nth-child(3){
+    color:#fff;
+}
+
+section:nth-child(4){
+    color:#202528;
+    background: #fff;
+}
+
+section:nth-child(5){
+    color:#fff;
+}
+
+section:nth-child(6){
+    color:#202528;
+    background: #fff;
+}
+
+section .container {
+    margin:100px;
+}
+
+section h1{
+    font-size:60px;
+}
+
+section h2{
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+/* HR Tag */
+.whr {
+    max-width: 15rem;
+    margin:0 auto 10vh auto;
+    border: 3px solid #ffffff;
+}
+
+/* HR Tag */
+.bhr {
+    max-width: 15rem;
+    margin:0 auto 10vh auto;
+    border: 3px solid #202528;
+}
+
+section .cards {
+    display:flex;
+    flex-wrap: wra;
+}
+
+section .cards .text-card {
+    display:flex;
+    flex-wrap: wrap;
+    background: #202528;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: all 0.5s ease;
+    min-height: 15rem;
+    max-height: 30rem;
+    justify-content: center;
+}
+
+section .cards .text-whitecard {
+    display:flex;
+    flex-wrap: wrap;
+    background: #fff;
+    color: #202528;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: all 0.5s ease;
+    min-height: 15rem;
+    max-height: 30rem;
+    justify-content: center;
+}
+
+section .cards .text-about {
+    display:flex;
+    flex-wrap: wrap;
+    background: #fff;
+    color: #202528;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: all 0.5s ease;
+    min-height: 15rem;
+    max-height: 30rem;
+    justify-content: center;
+}
+
+section .cards .text-about h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-card:hover{
+    transform:scale(1.1);
+    transition: all 1s ease;
+}
+
+.text-whitecard:hover{
+    transform:scale(1.1);
+    transition: all 1s ease;
+}
+
+section .cards .text-card h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section .cards .text-whitecard h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section .cards .text-card button {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    background:#202528;
+    border: 2px #fff solid;
+    transition: all 0.25s linear;
+}
+
+section .cards .text-card a {
+    margin: 25px;
+    margin-bottom: 10px;
+}
+
+/* section .cards .text-whitecard button {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    background:#202528;
+    border: 2px #fff solid;
+    transition: all 0.25s linear;
+}
+
+section .cards .text-whitecard a {
+    margin: 25px;
+} */
+
+section .cards .text-card button:hover{
+    background: #fff;
+    color: #202528;
+    transition: all 0.25s linear;
+    border: 2px #202528 solid;
+}
+
+section .cards .text-whitecard button:hover{
+    background: #fff;
+    color: #202528;
+    transition: all 0.25s linear;
+    border: 2px #202528 solid;
+}
+
+section .cards .text-card .white {
+    background: #fff;
+}
+
+@media (max-width: 1289px) {
+    section h2{
+        font-size: 4rem;
+    }
+
+    section .title-cont .title-text{
+        font-size: 1.1rem;   
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#helloText {
+    color: #bb6939;
+}
+
+.title-text {
+    font-size: 4rem;
+    font-family: Consolas,  Arial;
+    font-weight: 500;
+    padding:10px
+}
+
+.print-log {
+    color: #dcdcaa; /* Light yellow color */
+  }
+  .print-console {
+    color: #9cdcfe; /* Light blue color */
+  }
+  .print-bracket {
+    color: #f1d709; /* Bright yellow color */
+  }
+  .print-pr {
+    color: #ffffff; /* Gray color */
+}
+
+.footer {
+    min-height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #15181a;
+    color: #fff;
+    text-align: center;
+}
+
+.return-top {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    margin: 1.5rem;
+}
+
+.social-links {
+    display:flex;
+    justify-content: center;
+}
+
+.social-links img{
+    max-height: 2rem;
+    max-width: 2rem;
+    margin: 1rem 2rem 1rem 2rem;
+    transition: all 0.5s ease;
+}
+
+.social-links img:hover{
+    transform:translateY(-3px)
+}
+
+.footer .container p {
+    font-family: Consolas, Arial;
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.footer .container hr {
+    max-width: 15rem;
+    margin:1rem auto 2rem auto;
+}
+
+
+
+.down-arrow {
+    position:absolute;
+    top:90%;
+    left:50%;
+}
+
+.go-down {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.go-down:hover {
+    transform:scale(1.2);
+}
+
