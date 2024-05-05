@@ -76,7 +76,6 @@ section h2{
 
 section .cards {
     display:flex;
-    flex-wrap: wra;
 }
 
 section .cards .text-card {
