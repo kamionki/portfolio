@@ -312,3 +312,17 @@ section .cards .text-card .white {
     transform:scale(1.2);
 }
 
+::-webkit-scrollbar {
+    width: .5rem;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-track {
+    background: #e4e4e4
+}
+
+::-webkit-scrollbar-thumb {
+    background: #858585;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
